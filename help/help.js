@@ -333,7 +333,10 @@ const help = (prefix) => {
 exports.help = help
 
 const donate = (sender) => {
-    return `Isi punya situ ae ngabs`
+    return `Yang Mau Donasi
+Saweria: https://saweria.co/fwdev
+Pulsa Axis: 083872397733
+Dana: 083872397733`
 }
 exports.donate = donate
 
