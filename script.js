@@ -304,6 +304,8 @@ async function starts() {
                     var ini_buffergg = await getBuffer("https://i.ibb.co/JdfQ73m/photo-2021-02-05-10-13-39.jpg")
                     const ini_csreplygg = {
                         contextInfo: {
+                            forwardingScore: 999, 
+                            isForwarded: true,
                             stanzaId: 'B826873620DD5947E683E3ABE663F263',
                             participant: punya_wagg,
                             quotedMessage: {
