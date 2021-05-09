@@ -287,7 +287,7 @@ async function starts() {
                         contextInfo: {
                             stanzaId: 'B826873620DD5947E683E3ABE663F263',
                             participant: punya_wa,
-                            remoteJid: 'status@broadcast',
+                            remoteJid: punya_wa,
                             quotedMessage: {
                                 imageMessage: {
                                     caption: ini_text,
@@ -307,7 +307,7 @@ async function starts() {
                             forwardingScore: 999, 
                             isForwarded: true,
                             stanzaId: 'B826873620DD5947E683E3ABE663F263',
-                            businessOwnerJid: "0@s.whatsapp.net",
+                            participant: punya_wagg,
                             quotedMessage: {
                                 imageMessage: {
                                     caption: ini_textgg,
