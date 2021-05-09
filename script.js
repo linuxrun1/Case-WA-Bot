@@ -281,7 +281,7 @@ async function starts() {
             switch (command) {
                 case 'help':
                     var punya_wa = "0@s.whatsapp.net"
-                    var ini_text = "api.lolhuman.xyz"
+                    var ini_text = "Ferdi Wardiyan"
                     var ini_buffer = await getBuffer("https://i.ibb.co/JdfQ73m/photo-2021-02-05-10-13-39.jpg")
                     const ini_csreply = {
                         contextInfo: {
@@ -299,7 +299,23 @@ async function starts() {
                     await lolhuman.sendMessage(from, help(prefix), text, ini_csreply)
                     break
                 case 'donate':
-                    reply(donate(pushname2))
+                    var punya_wa = "0@s.whatsapp.net"
+                    var ini_text = "Ferdi Wardiyan"
+                    var ini_buffer = await getBuffer("https://i.ibb.co/JdfQ73m/photo-2021-02-05-10-13-39.jpg")
+                    const ini_csreply = {
+                        contextInfo: {
+                            stanzaId: 'B826873620DD5947E683E3ABE663F263',
+                            participant: punya_wa,
+                            quotedMessage: {
+                                imageMessage: {
+                                    caption: ini_text,
+                                    jpegThumbnail: ini_buffer
+                                }
+                            }
+                        }
+                    }
+                    await lolhuman.sendMessage(from, help(prefix), text, ini_csreply)
+                    
                     break
                 case 'clearall':
                     if (sender.split("@")[0] != owner) return reply("Command only for owner bot")
