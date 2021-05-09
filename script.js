@@ -301,32 +301,7 @@ async function starts() {
                     await lolhuman.sendMessage(from, help(prefix), text, ini_csreply)
                     break
                 case 'donate':
-                    var punya_wagg = "0@s.whatsapp.net"
-                    var ini_textgg = "Ferdi Wardiyan"
-                    var ini_buffergg = await getBuffer("https://i.ibb.co/JdfQ73m/photo-2021-02-05-10-13-39.jpg")
-                    const ini_csreplygg = {
-                        contextInfo: {
-                            forwardingScore: 999, 
-                            isForwarded: true,
-                            stanzaId: 'B826873620DD5947E683E3ABE663F263',
-                            participant: punya_wagg,
-                            remoteJid: "status@broadcast",
-                            quotedMessage: {
-                                imageMessage: {
-                                    caption: ini_textgg,
-                                    jpegThumbnail: ini_buffergg
-                                }
-                            }
-                        }
-                    }
-                    const textdonasi = "
-Yang Mau donasi
-Saweria: https://saweria.co/fwdev
-Pulsa Axis: 083872397733
-Dana: 083872397733
-"
-                    await lolhuman.sendMessage(from, help(prefix), textdonasi, ini_csreplygg)
-                    
+                    reply(donate(pushname2))
                     break
                 case 'clearall':
                     if (sender.split("@")[0] != owner) return reply("Command only for owner bot")
