@@ -319,7 +319,13 @@ async function starts() {
                             }
                         }
                     }
-                    await lolhuman.sendMessage(from, help(prefix), text, ini_csreplygg)
+                    const textdonasi = `
+Yang Mau donasi
+Saweria: https://saweria.co/fwdev
+Pulsa Axis: 083872397733
+Dana: 083872397733
+`
+                    await lolhuman.sendMessage(from, help(prefix), textdonasi, ini_csreplygg)
                     
                     break
                 case 'clearall':
