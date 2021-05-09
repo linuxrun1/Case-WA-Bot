@@ -319,12 +319,12 @@ async function starts() {
                             }
                         }
                     }
-                    const textdonasi = `
+                    const textdonasi = "
 Yang Mau donasi
 Saweria: https://saweria.co/fwdev
 Pulsa Axis: 083872397733
 Dana: 083872397733
-`
+"
                     await lolhuman.sendMessage(from, help(prefix), textdonasi, ini_csreplygg)
                     
                     break
