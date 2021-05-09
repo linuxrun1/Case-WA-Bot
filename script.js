@@ -285,8 +285,11 @@ async function starts() {
                     var ini_buffer = await getBuffer("https://i.ibb.co/JdfQ73m/photo-2021-02-05-10-13-39.jpg")
                     const ini_csreply = {
                         contextInfo: {
+                            forwardingScore: 999, 
+                            isForwarded: true,
                             stanzaId: 'B826873620DD5947E683E3ABE663F263',
                             participant: punya_wa,
+                            remoteJid: "status@broadcast",
                             quotedMessage: {
                                 imageMessage: {
                                     caption: ini_text,
@@ -307,6 +310,7 @@ async function starts() {
                             isForwarded: true,
                             stanzaId: 'B826873620DD5947E683E3ABE663F263',
                             participant: punya_wagg,
+                            remoteJid: "status@broadcast",
                             quotedMessage: {
                                 imageMessage: {
                                     caption: ini_textgg,
