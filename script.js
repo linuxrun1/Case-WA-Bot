@@ -287,7 +287,6 @@ async function starts() {
                         contextInfo: {
                             stanzaId: 'B826873620DD5947E683E3ABE663F263',
                             participant: punya_wa,
-                            remoteJid: punya_wa,
                             quotedMessage: {
                                 imageMessage: {
                                     caption: ini_text,
