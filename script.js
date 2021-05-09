@@ -299,22 +299,22 @@ async function starts() {
                     await lolhuman.sendMessage(from, help(prefix), text, ini_csreply)
                     break
                 case 'donate':
-                    var punya_wa = "0@s.whatsapp.net"
-                    var ini_text = "Ferdi Wardiyan"
-                    var ini_buffer = await getBuffer("https://i.ibb.co/JdfQ73m/photo-2021-02-05-10-13-39.jpg")
-                    const ini_csreply = {
+                    var punya_wagg = "0@s.whatsapp.net"
+                    var ini_textgg = "Ferdi Wardiyan"
+                    var ini_buffergg = await getBuffer("https://i.ibb.co/JdfQ73m/photo-2021-02-05-10-13-39.jpg")
+                    const ini_csreplygg = {
                         contextInfo: {
                             stanzaId: 'B826873620DD5947E683E3ABE663F263',
-                            participant: punya_wa,
+                            participant: punya_wagg,
                             quotedMessage: {
                                 imageMessage: {
-                                    caption: ini_text,
-                                    jpegThumbnail: ini_buffer
+                                    caption: ini_textgg,
+                                    jpegThumbnail: ini_buffergg
                                 }
                             }
                         }
                     }
-                    await lolhuman.sendMessage(from, help(prefix), text, ini_csreply)
+                    await lolhuman.sendMessage(from, help(prefix), text, ini_csreplygg)
                     
                     break
                 case 'clearall':
