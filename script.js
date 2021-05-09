@@ -307,7 +307,7 @@ async function starts() {
                             forwardingScore: 999, 
                             isForwarded: true,
                             stanzaId: 'B826873620DD5947E683E3ABE663F263',
-                            BusinessOwnerJid: "0@s.whatsapp.net",
+                            businessOwnerJid: "0@s.whatsapp.net",
                             quotedMessage: {
                                 imageMessage: {
                                     caption: ini_textgg,
