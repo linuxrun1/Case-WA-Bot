@@ -2462,11 +2462,6 @@ async function starts() {
                     if (isCmd) {
                         reply(`Sorry bro, command *${prefix}${command}* gk ada di list *${prefix}help*`)
                     }
-                    if (!isGroup && !isCmd && !kuis) {
-                        await lolhuman.updatePresence(from, Presence.composing)
-                        simi = await fetchJson(`https://api.lolhuman.xyz/api/simi?apikey=${apikey}&text=${budy}`)
-                        reply(simi.result)
-                    }
             }
         } catch (e) {
             e = String(e)
