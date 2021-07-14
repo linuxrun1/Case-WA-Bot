@@ -2,6 +2,17 @@ let { spawn } = require('child_process')
 let path = require('path')
 let fs = require('fs')
 const CFonts = require('cfonts')
+const express = require('express')
+const app = express()
+const PORT = process.env.PORT || 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`)
+})
 
 CFonts.say('Bot WA', {
     font: 'chrome',
